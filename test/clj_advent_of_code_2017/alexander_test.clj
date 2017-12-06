@@ -38,10 +38,24 @@
 
 (deftest test-checksum-sum
     (testing "Testing checksum-sum"
-      (is (= (checksum-sum [[5 1 9 5] [7 5 3] [2 4 6 8]]))) 18))
+      (is (= (checksum-sum [[5 1 9 5]
+                            [7 5 3]
+                            [2 4 6 8]]))) 18))
 
 (deftest test-checksum-div
     (testing "Testing checksum-div"
       (is (= (checksum-div [[5 9 2 8]
                             [9 4 7 3]
                             [3 8 6 5]]) 9))))
+
+(deftest test-generic-checksum
+  (testing "Testing generic checksum calculation"
+    (is (= (generic-checksum get-row-min-max-diff [[5 1 9 5]
+                                                   [7 5 3]
+                                                   [2 4 6 8]]))) 18))
+
+(deftest test-checksum-div
+  (testing "Testing checksum-div"
+    (is (= (generic-checksum get-row-evenly-divisible-value [[5 9 2 8]
+                                                             [9 4 7 3]
+                                                             [3 8 6 5]]) 9))))

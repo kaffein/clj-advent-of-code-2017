@@ -50,3 +50,9 @@
   each rows evenly distributed values"
   [rows]
   (reduce + (map #(get-row-evenly-divisible-value %) rows)))
+
+(defn generic-checksum
+  "First order function allowing checksum calculation based on a function f
+  passed in as an arguments in addition to the rows"
+  [f rows]
+  (reduce + (map f rows)))
