@@ -1,4 +1,4 @@
-(ns clj-advent-of-code-2017.ansanus
+(ns clj-advent-of-code-2017.ada
   (:require [clojure.java.io :as io]))
 
 (defn repetition-free?

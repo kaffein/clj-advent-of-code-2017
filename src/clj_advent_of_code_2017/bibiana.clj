@@ -1,4 +1,4 @@
-(ns clj-advent-of-code-2017.alexander)
+(ns clj-advent-of-code-2017.bibiana)
 
 (defn get-row-min-max-diff
   "Calculates the min and max difference"

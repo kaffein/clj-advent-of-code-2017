@@ -1,6 +1,6 @@
-(ns clj-advent-of-code-2017.alexander-test
+(ns clj-advent-of-code-2017.bibiana-test
   (:require [clojure.test :refer :all]
-            [clj-advent-of-code-2017.alexander :refer :all]))
+            [clj-advent-of-code-2017.bibiana :refer :all]))
 
 (deftest test-get-row-min-max-diff
   (testing "Testing get-row-min-max-diff"

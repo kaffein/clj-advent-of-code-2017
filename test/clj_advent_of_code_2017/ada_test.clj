@@ -1,6 +1,6 @@
-(ns clj-advent-of-code-2017.ansanus-test
+(ns clj-advent-of-code-2017.ada-test
   (:require [clojure.test :refer :all]
-              [clj-advent-of-code-2017.ansanus :refer :all]))
+            [clj-advent-of-code-2017.ada :refer :all]))
 
 (deftest test-repetition-free?
   (testing "Testing repetition-free? function"
